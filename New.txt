@@ -1,0 +1,35 @@
+see
+
+the images we are getting now are very low quality. The program is working perfectly as 
+it should. If you want to use the latest picture everytime then you need to
+
+make sure that
+
+The new picture is Very clear. and in day light
+
+Ideally it should be only balck and white...any other colors will confuse Tesseract.
+
+This is how your pictures should look for Tesseract.
+
+If the picture is not clear...Tesseract will not work and it will crash the program..
+
+So make sure you test using a few pictures with laptop connected to make sure it is working
+
+This problem is only because of Tesseract and beyond my control. so you have to be careful
+
+
+Now if you want to use latest pictures, you need to make this change in the code. Just 
+copy the complete green color text infront of camera into the filename. 
+
+UNDERSTAND???
+
+These are three different functions...We are doing the OCR on the main processor
+and the Audio on a different thread to make it easy for RPi.
+
+The first_iteration function runs the audio on a separate thread and make the 
+program ready to speak
+
+then we wait 2 seconds 
+
+and then the continuous(text) function plays the audio
+
